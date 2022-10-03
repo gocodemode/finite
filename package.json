@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "echo \"No test script\"",
-    "build": "webpack,"
+    "build": "webpack",
     "start": "webpack-dev-server --open"
   },
   "keywords": [],

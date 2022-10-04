@@ -8,4 +8,24 @@ module.exports = {
         filename: "index_bundle.js",
         publicPath: "/"
     },
+    module: {
+        rules: [
+            {
+                test: /\.(js)$/,
+                use: "babel-loader"
+            },
+            {
+                test:/\.css$/,
+                loaders: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader"
+                ]
+            }
+        ]
+    }
 }

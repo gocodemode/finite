@@ -32,4 +32,8 @@ module.exports = {
             }
         ]
     },
+    mode:"development",
+    resolve: {
+        extension: [".js", ".jsx"]
+    }, 
 }
